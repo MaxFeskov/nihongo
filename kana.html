@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kana</title>
+  <link rel="stylesheet" href="src/main.css">
+  <link rel="stylesheet" href="src/kana.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <div id="symbol">あ</div>
+      <form id="form">
+        <input id="answer" name="answer" autocomplete="off" disabled="disabled" />
+      </form>
+
+      <div>
+        <div id="history"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>
+        <label class="checkbox-label kana-filter-item">
+          <input type="checkbox" name="" checked="true" /> あ
+        </label>
+        <label class="checkbox-label kana-filter-item">
+          <input type="checkbox" checked="true" /> ア
+        </label>
+      </div>
+      <div class="groups">
+        <label class="checkbox-label group-filter-item">
+          <input type="checkbox" checked="true" /> あ
+        </label>
+        <label class="checkbox-label group-filter-item">
+          <input type="checkbox" checked="true" /> か
+        </label>
+        <label class="checkbox-label group-filter-item">
+          <input type="checkbox" checked="true" /> さ
+        </label>
+        <label class="checkbox-label group-filter-item">
+          <input type="checkbox" checked="true" /> た
+        </label>
+        <label class="checkbox-label group-filter-item">
+          <input type="checkbox" checked="true" /> な
+        </label>
+        <label class="checkbox-label group-filter-item">
+          <input type="checkbox" checked="true" /> は
+        </label>
+        <label class="checkbox-label group-filter-item">
+          <input type="checkbox" checked="true" /> ま
+        </label>
+        <label class="checkbox-label group-filter-item">
+          <input type="checkbox" checked="true" /> や
+        </label>
+        <label class="checkbox-label group-filter-item">
+          <input type="checkbox" checked="true" /> ら
+        </label>
+        <label class="checkbox-label group-filter-item">
+          <input type="checkbox" checked="true" /> わ
+        </label>
+      </div>
+      <div>
+         <label class="checkbox-label kana-filter-item">
+            <input type="checkbox" /> ばぱ
+        </label>
+      </div>
+      <div>
+        <button id="start" href="javascript:void(0)" class="btn">&#9658;</button>
+        <button id="stop" href="javascript:void(0)" disabled="disabled" class="btn">&#9724;</button>
+        <button id="reset" href="javascript:void(0)" class="btn">&#10227;</button>
+       </div>
+    </div>
+  </div>
+
+  <a class="home" href="./index.html">&#8962;</a>
+
+  <script src="src/kana.js" type="module"></script>
+</body>
+</html>

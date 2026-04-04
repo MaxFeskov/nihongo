@@ -123,12 +123,55 @@ body {
 
 .content {
   flex: 1 0 auto;
-  padding: 10px 15px;
   text-align: center;
 }
 
 .footer {
   flex: 0 0 auto;
-  padding: 10px 15px;
   text-align: center;
+}
+
+.page-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 15px;
+}
+
+.page-link {
+  margin-bottom: 10px;
+}
+
+.home {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  border: 1px solid #333;
+}
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.checkbox-label input {
+  appearance: none;
+  opacity: 0;
+}
+
+.checkbox-label:has(input[type="checkbox"]:checked) {
+  color: white;
+  background-color: #333;
 }
