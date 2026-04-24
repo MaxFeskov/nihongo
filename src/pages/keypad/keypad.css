@@ -1,0 +1,78 @@
+.keypad {
+  width: 750px;
+  height: 250px;
+  margin: 0 auto 20px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.key-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.key {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+  border: 1px solid #ccc;
+}
+
+.key::selection {
+  color: inherit;
+}
+
+.key.selected {
+  color: white;
+  background: #333;
+}
+
+.key.selected-2 {
+  color: white;
+  background: #666;
+}
+
+.key[data-id="backspace"] {
+  width: 100px;
+}
+
+.key[data-id="tab"] {
+  width: 75px;
+}
+
+.key[data-id="caps-lock"] {
+  width: 88px;
+}
+
+.key[data-id="left-shift"] {
+  width: 112px;
+}
+
+.key[data-id="right-shift"] {
+  width: 138px;
+}
+
+.key[data-id="\\"] {
+  width: 75px;
+}
+
+.key[data-id="enter"] {
+  width: 120px;
+}
+
+.key[data-id="left-ctrl"],
+.key[data-id="right-ctrl"] {
+  width: 75px;
+}
+
+.key[data-id="alt"],
+.key[data-id="alt-gr"] {
+  width: 75px;
+}
+
+.key[data-id="space"] {
+  width: 300px;
+}
