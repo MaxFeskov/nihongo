@@ -73,13 +73,13 @@ export const getSymbols = async (result, { baseFilters, extFilters } = {}) => {
   if (!baseFilters || baseFilters.includes("あ")) {
     data.push(...baseHiragana);
 
-    if (!baseFilters || baseFilters.includes("extended")) data.push(...extendedHiragana);
+    if (!baseFilters || baseFilters.includes("ばぱ")) data.push(...extendedHiragana);
   }
 
   if (!baseFilters || baseFilters.includes("ア")) {
     data.push(...baseKatakana);
 
-    if (!baseFilters || baseFilters.includes("extended")) data.push(...extendedKatakana);
+    if (!baseFilters || baseFilters.includes("ばぱ")) data.push(...extendedKatakana);
   }
 
   const answers = randomSortArr(

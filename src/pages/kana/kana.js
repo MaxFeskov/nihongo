@@ -1,6 +1,6 @@
-import { appendElementText, getCheckedTextBySelector, setElementText } from "./modules/html.js";
-import { getSymbols, isCorrectAnswer } from "./modules/kana.js";
-import { Voice } from "./modules/vioce.js";
+import { appendElementText, getCheckedTextBySelector, setElementText } from "../../modules/html.js";
+import { getSymbols, isCorrectAnswer } from "../../modules/kana.js";
+import { Voice } from "../../modules/vioce.js";
 
 (async () => {
   const answers = [];
@@ -89,7 +89,11 @@ import { Voice } from "./modules/vioce.js";
     const baseFilters = getCheckedTextBySelector('.kana-filter-item:has(input[type="checkbox"]:checked)');
     const extFilters = getCheckedTextBySelector('.group-filter-item:has(input[type="checkbox"]:checked)');
 
+    console.log({ baseFilters, extFilters });
+
     await getSymbols(answers, { baseFilters, extFilters });
+
+    console.log({ answers });
 
     if (!answers.length) return stop();
 
