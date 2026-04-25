@@ -1,6 +1,6 @@
 .keypad {
-  width: 750px;
-  height: 250px;
+  width: 780px;
+  height: 262px;
   margin: 0 auto 20px;
   text-align: left;
   border: 1px solid #ccc;
@@ -19,6 +19,7 @@
   height: 50px;
   pointer-events: none;
   border: 1px solid #ccc;
+  margin: 1px;
 }
 
 .key::selection {
@@ -52,7 +53,7 @@
 }
 
 .key[data-id="right-shift"] {
-  width: 138px;
+  width: 142px;
 }
 
 .key[data-id="\\"] {
@@ -60,7 +61,7 @@
 }
 
 .key[data-id="enter"] {
-  width: 120px;
+  width: 114px;
 }
 
 .key[data-id="left-ctrl"],
@@ -74,5 +75,5 @@
 }
 
 .key[data-id="space"] {
-  width: 300px;
+  width: 312px;
 }
